@@ -1,3 +1,5 @@
+[![QMake](https://github.com/Kuszki/PI-Roll-Example/actions/workflows/qmake.yml/badge.svg)](https://github.com/Kuszki/PI-Roll-Example/actions/workflows/qmake.yml)
+
 # PI-Roll-Example
 Przykładowy projekt Qt - symulacja rzutu kostką
 
