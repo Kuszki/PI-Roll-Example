@@ -1,0 +1,25 @@
+name: QMake
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Install Qt
+      run: sudo apt update && sudo apt install -yq qt5-qmake qt5-default
+    
+    - name: Configure
+      run: qmake
+    
+    - name: Make
+      run: make
+    
